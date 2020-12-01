@@ -1,7 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+
 html {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   min-height: 100vh;
+  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1017%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M -950.9338586936349%2c200 C -854.93%2c242.2 -662.93%2c399.8 -470.93385869363493%2c411 C -278.93%2c422.2 -182.93%2c275.4 9.066141306365068%2c256 C 201.07%2c236.6 297.07%2c332 489.06614130636507%2c314 C 681.07%2c296 778.88%2c167.2 969.0661413063651%2c166 C 1159.25%2c164.8 1345.81%2c279.6 1440%2c308' stroke='rgba(12%2c 47%2c 84%2c 0.22)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -258.0927390925916%2c309 C -162.09%2c293.2 29.91%2c199.8 221.90726090740839%2c230 C 413.91%2c260.2 509.91%2c499.4 701.9072609074084%2c460 C 893.91%2c420.6 989.91%2c62 1181.9072609074083%2c33 C 1373.91%2c4 1610.29%2c284.6 1661.9072609074083%2c315 C 1713.53%2c345.4 1484.38%2c211 1440%2c185' stroke='rgba(12%2c 47%2c 84%2c 0.22)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -866.8494422333334%2c251 C -770.85%2c312.2 -578.85%2c595.8 -386.84944223333343%2c557 C -194.85%2c518.2 -98.85%2c76.2 93.15055776666657%2c57 C 285.15%2c37.8 381.15%2c466.8 573.1505577666666%2c461 C 765.15%2c455.2 879.78%2c48.4 1053.1505577666667%2c28 C 1226.52%2c7.6 1362.63%2c292.8 1440%2c359' stroke='rgba(12%2c 47%2c 84%2c 0.22)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -484.0201224519733%2c115 C -388.02%2c161.2 -196.02%2c344.8 -4.020122451973265%2c346 C 187.98%2c347.2 283.98%2c85 475.9798775480267%2c121 C 667.98%2c157 763.98%2c507.8 955.9798775480267%2c526 C 1147.98%2c544.2 1339.18%2c211 1435.9798775480267%2c212 C 1532.78%2c213 1439.2%2c467.2 1440%2c531' stroke='rgba(12%2c 47%2c 84%2c 0.22)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -378.76739931656084%2c5 C -282.77%2c80.8 -90.77%2c357.8 101.23260068343913%2c384 C 293.23%2c410.2 389.23%2c137.2 581.2326006834392%2c136 C 773.23%2c134.8 869.23%2c359 1061.2326006834392%2c378 C 1253.23%2c397 1465.48%2c195.2 1541.2326006834392%2c231 C 1616.99%2c266.8 1460.25%2c491.8 1440%2c557' stroke='rgba(12%2c 47%2c 84%2c 0.22)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1017'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 0;
+  background-color: rgb(255 255 255 / 90%);
+  box-shadow: 2px 2px 5px 2px rgb(134 134 134 / 20%);
+  border: 1px solid #f1f1f1cc;
+}
+
+.quote-text {
+  font-size: 2.75rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 1px 3px.3rem rgba(121, 121, 121, 0.65);
+  transition: all 200ms ease-in-out;
+  text-transform: uppercase;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+  .quote-text {
+    font-size: 2.5rem;
+  }
 }
